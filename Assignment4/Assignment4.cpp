@@ -52,15 +52,30 @@ int main()
     cout << "The reverse is " << numberOutput << endl;
     */
 
+    
     // Activity 3: Stars
+    int counter;
+    bool conditional;
 
-    int COLS = 13;
-
-    for (int i = 0; i <= 6; i++) {
-        for (int x = 0; ; ) {
+    
+    for (int cols = 0; cols < 7; cols++) {
+        
+        /*
+        counter = 0;
+        while (counter < pow(2, cols)) {
             cout << "*";
+            counter++;
         }
+        */
+        
+       
+        counter = 7;        
+        while (counter < pow(2, cols)) {
+            cout << "*";
+            counter--;
+        }
+
         cout << endl;
     }
-   
+
 }
